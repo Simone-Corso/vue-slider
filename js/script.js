@@ -11,17 +11,15 @@ createApp({
         'img/04.webp',
         'img/05.webp',
          ],
-
-         title: 'Marvels Spiderman Miles Morale',
+         title: ['Marvels Spiderman Miles Morale',
          'Ratchet & Clank Rift Apart',
          'Fortnite',
          'Stray',
-         'Marvel s Avengers',
+         'Marvel s Avengers'],
 
-         description: '"Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man."'
-
-
-    
+         description: ['"Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man."',
+         "Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.",
+        ]
     }
   },
 
