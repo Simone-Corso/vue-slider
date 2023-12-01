@@ -11,12 +11,7 @@ createApp({
         'img/04.webp',
         'img/05.webp',
          ],
-
-         title: 'Marvel\'s Spiderman Miles Morale','Ratchet & Clank: Rift Apart', 'Fortnite', 'Stray', 'Marvel's Avengers',
-         text: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
-        
-
-
+    
     }
   }
 }).mount('#app')
