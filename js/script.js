@@ -12,13 +12,15 @@ createApp({
         'img/05.webp',
          ],
 
-         title: ["Marvel's Spiderman Miles Morale",
-         "Ratchet & Clank Rift Apart",
-         "Fortnite",
-         "Stray",
-         "Marvel's Avengers",]
+         title: 'Marvels Spiderman Miles Morale',
+         'Ratchet & Clank Rift Apart',
+         'Fortnite',
+         'Stray',
+         'Marvel s Avengers',
 
-         
+         description: '"Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man."'
+
+
     
     }
   },
@@ -43,4 +45,5 @@ createApp({
   prevSlide(){
     this.ChangesSlideTo(this.activeIndex - 1)
   },
+  
 }).mount('#app')
