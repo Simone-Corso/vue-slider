@@ -1,4 +1,4 @@
-import { createApp } from 'vue';
+import { createApp }  from 'vue';
 
 createApp({
   data() {
@@ -12,6 +12,16 @@ createApp({
         'img/05.webp',
          ],
     
+    }
+  },
+
+  methods: {
+    ChangesSlideTo(index){
+        if(index >= this.image.length || index < 0){
+            return false;
+        }
+
+        this.ActiveIndex = index;
     }
   }
 }).mount('#app')
