@@ -23,7 +23,18 @@ createApp({
 
         this.ActiveIndex = index;
     }
-  }
+  },
+
+  nextSlide(){
+    this.ActiveIndex = this.ActiveIndex + 1;
+    if (this.ActiveIndex >= this.images.lenght){
+        this.ActiveIndex = 0;
+    }
+  },
+
+  prevSlide(){
+    this.ChangesSlideTo(this.ActiveIndex - 1)
+  },
 }).mount('#app')
 
 
