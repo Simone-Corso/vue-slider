@@ -11,6 +11,7 @@ createApp({
         'img/04.webp',
         'img/05.webp',
          ],
+    
          title: ['Marvels Spiderman Miles Morale',
          'Ratchet & Clank Rift Apart',
          'Fortnite',
@@ -18,30 +19,33 @@ createApp({
          'Marvel s Avengers'],
 
          description: ['"Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man."',
-         "Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.",
-        ]
+                        "Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality."]
+        
     }
   },
 
   methods: {
+
+    nextSlide(){
+      this.activeIndex = this.activeIndex + 1;
+      if (this.activeIndex >= this.images.length){
+          this.activeIndex = 0;
+      }
+    },
+
+    prevSlide(){
+      this.ChangesSlideTo(this.activeIndex - 1)
+    },
+
     ChangesSlideTo(index){
         if(index >= this.image.length || index < 0){
             return false;
         }
 
         this.activeIndex = index;
-    }
-  },
 
-  nextSlide(){
-    this.activeIndex = this.activeIndex + 1;
-    if (this.activeIndex >= this.images.lenght){
-        this.activeIndex = 0;
-    }
-  },
 
-  prevSlide(){
-    this.ChangesSlideTo(this.activeIndex - 1)
+    }
   },
   
 }).mount('#app')
